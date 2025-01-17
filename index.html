@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Itim&family=Jersey+15&family=Lilita+One&family=Pacifico&family=Rubik+Wet+Paint&family=Spicy+Rice&family=Yuji+Mai&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Website</title>
+    <!-- Flickity CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.min.css">
+</head>
+
+<body>
+<div class="overflow">
+    <!-- Header -->
+    <header class="header">
+        <img src="logo.jpg" alt="Website Logo" class="header-logo">
+        <h1 class="header-title">Welcome to Raj Watch-Shop</h1>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search...">
+            <button class="search-button">🔍</button>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="toggle" id="toggle">☰</div>
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#watch">Watches</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="form.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Flickity Carousel -->
+    <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": 3000 }' id="home">
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+    </div>
+
+    <div class="firstcontainer" id="watch">
+        <header class="head">
+            <h1>Buy Your Watch</h1>
+        </header>
+
+        <div class="carouselone" data-flickity='{"wrapAround": true, "autoPlay": true}'>
+            <!-- Watch 1 -->
+            <div class="carousel-cellone">
+                <img src="card1.jpg" alt="Watch 1">
+                <h3>Elegant Gold Watch</h3>
+                <p>$500</p>
+                <button onclick="viewDetails('Elegant Gold Watch', '$500')">View Details</button>
+            </div>
+
+            <!-- Watch 2 -->
+            <div class="carousel-cellone">
+                <img src="card2.jpg" alt="Watch 2">
+                <h3>Classic Leather Watch</h3>
+                <p>$250</p>
+                <button onclick="viewDetails('Classic Leather Watch', '$250')">View Details</button>
+            </div>
+
+            <!-- Watch 3 -->
+            <div class="carousel-cellone">
+                <img src="card3.jpg" alt="Watch 3">
+                <h3>Sport Digital Watch</h3>
+                <p>$150</p>
+                <button onclick="viewDetails('Sport Digital Watch', '$150')">View Details</button>
+            </div>
+
+            <!-- Watch 4 -->
+            <div class="carousel-cellone">
+                <img src="card4.jpg" alt="Watch 4">
+                <h3>Luxury Diamond Watch</h3>
+                <p>$1,200</p>
+                <button onclick="viewDetails('Luxury Diamond Watch', '$1,200')">View Details</button>
+            </div>
+
+            <!-- Watch 5 -->
+            <div class="carousel-cellone">
+                <img src="card5.jpg" alt="Watch 5">
+                <h3>Modern Minimal Watch</h3>
+                <p>$300</p>
+                <button onclick="viewDetails('Modern Minimal Watch', '$300')">View Details</button>
+            </div>
+
+            <!-- Watch 6 -->
+            <div class="carousel-cellone">
+                <img src="card6.jpg" alt="Watch 6">
+                <h3>Vintage Pocket Watch</h3>
+                <p>$450</p>
+                <button onclick="viewDetails('Vintage Pocket Watch', '$450')">View Details</button>
+            </div>
+
+            <!-- Watch 7 -->
+            <div class="carousel-cellone">
+                <img src="eight.jpg" alt="Watch 7">
+                <h3>Smart Fitness Watch</h3>
+                <p>$200</p>
+                <button onclick="viewDetails('Smart Fitness Watch', '$200')">View Details</button>
+            </div>
+
+            <!-- Watch 8 -->
+            <div class="carousel-cellone">
+                <img src="nine.jpg" alt="Watch 8">
+                <h3>Chronograph Steel Watch</h3>
+                <p>$600</p>
+                <button onclick="viewDetails('Chronograph Steel Watch', '$600')">View Details</button>
+            </div>
+
+            <!-- Watch 9 -->
+            <div class="carousel-cellone">
+                <img src="two.jpg" alt="Watch 9">
+                <h3>Luxury Sapphire Watch</h3>
+                <p>$1,000</p>
+                <button onclick="viewDetails('Luxury Sapphire Watch', '$1,000')">View Details</button>
+            </div>
+
+            <!-- Watch 10 -->
+            <div class="carousel-cellone">
+                <img src="one.jpg" alt="Watch 10">
+                <h3>Rugged Outdoor Watch</h3>
+                <p>$350</p>
+                <button onclick="viewDetails('Rugged Outdoor Watch', '$350')">View Details</button>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <div class="twocontainer" id="about">
+
+
+        <h1>EXPLORE THE COLLECTION</h1>
+        <div class="container">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="1one.jpg" alt="Tissot T-Classic PRX">
+                <div class="card-content">
+                    <h3>Tissot T-Classic PRX Green Dial Men 40mm</h3>
+                    <p class="price">₹37,000</p>
+                    <p class="emi">or ₹3,345/Month on EMI</p>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="2two.jpg" alt="Tissot T-Sport Black">
+                <div class="card-content">
+                    <h3>Tissot T-Sport Black Dial Men 41mm</h3>
+                    <p class="price">₹99,000</p>
+                    <p class="emi">or ₹8,950/Month on EMI</p>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="3three.jpg" alt="Rado Coupole Diamonds">
+                <div class="card-content">
+                    <h3>Rado Coupole Diamonds White Dial Women 34mm</h3>
+                    <p class="price">₹257,300</p>
+                    <p class="emi">or ₹23,500/Month on EMI</p>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <img src="4four.jpg" alt="Rado True Square">
+                <div class="card-content">
+                    <h3>Rado True Square Automatic Open Heart Silver Dial</h3>
+                    <p class="price">₹310,200</p>
+                    <p class="emi">or ₹28,000/Month on EMI</p>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card">
+                <img src="5five.jpg" alt="Tissot Heritage Visodate">
+                <div class="card-content">
+                    <h3>Tissot Heritage Visodate Men 42mm</h3>
+                    <p class="price">₹45,000</p>
+                    <p class="emi">or ₹4,050/Month on EMI</p>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="card">
+                <img src="6six.jpg" alt="Rado Captain Cook">
+                <div class="card-content">
+                    <h3>Rado Captain Cook Black Dial Men 43mm</h3>
+                    <p class="price">₹415,500</p>
+                    <p class="emi">or ₹37,500/Month on EMI</p>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="card">
+                <img src="7seven.jpg" alt="Tissot Seastar 1000">
+                <div class="card-content">
+                    <h3>Tissot Seastar 1000 Blue Dial Men 45mm</h3>
+                    <p class="price">₹65,000</p>
+                    <p class="emi">or ₹5,750/Month on EMI</p>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="card">
+                <img src="three.jpg" alt="Rado Centrix">
+                <div class="card-content">
+                    <h3>Rado Centrix White Dial Women 38mm</h3>
+                    <p class="price">₹185,000</p>
+                    <p class="emi">or ₹16,750/Month on EMI</p>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="four.jpg" alt="Tissot Seastar 1000">
+                <div class="card-content">
+                    <h3>Tissot Seastar 1000 Blue Dial Men 45mm</h3>
+                    <p class="price">₹65,000</p>
+                    <p class="emi">or ₹5,750/Month on EMI</p>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="five.jpg" alt="Tissot T-Sport Black">
+                <div class="card-content">
+                    <h3>Tissot T-Sport Black Dial Men 41mm</h3>
+                    <p class="price">₹99,000</p>
+                    <p class="emi">or ₹8,950/Month on EMI</p>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="1one.jpg" alt="Tissot T-Classic PRX">
+                <div class="card-content">
+                    <h3>Tissot T-Classic PRX Green Dial Men 40mm</h3>
+                    <p class="price">₹37,000</p>
+                    <p class="emi">or ₹3,345/Month on EMI</p>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="4four.jpg" alt="Rado True Square">
+                <div class="card-content">
+                    <h3>Rado True Square Automatic Open Heart Silver Dial</h3>
+                    <p class="price">₹310,200</p>
+                    <p class="emi">or ₹28,000/Month on EMI</p>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+  
+
+
+    <div class="threeontainer">
+
+        <h1>WATCH SERVICE</h1>
+        <img src="special.webp" alt="" srcset="">
+
+        <h2>WATCH SERVICES</h2>
+        <p>Get your watch serviced at our authorized service center, <br>We provide lots of watches according to clients
+            request.</p>
+        <a href="form.html">
+            <button class="amazing-button">SERVICE REQUEST</button>
+        </a>
+    </div>
+
+    <div class="fourcontainer">
+
+
+        <img src="showroom.jpg" alt="" srcset="">
+
+        <h2>SHOWROOMS</h2>
+        <p>Would you like to visit us? <br> Locate the ZIMSON boutique that is closest to you. <br> We are looking
+            forward to welcoming you.</p>
+        <a href="showroom.html"> <button class="amazing-buttontwo">FIND A SHOWROOM</button> </a>
+    </div>
+
+
+    <div class="fivecontainer">
+        <div class="jumbotron">
+            <h1 class="display-4">Hello, Sir!</h1>
+            <p class="lead">A watch is not just a timepiece; it's a statement of your style and a testament to
+                precision.
+                Crafted with meticulous care, each of our watches is a masterpiece that defines sophistication."
+                Discover a new era of luxury where functionality meets exquisite design.
+            </p>
+            <hr class="my-4">
+            <p>
+                Wear the future of time – a blend of innovation and tradition that transcends generations.
+                More than just a watch – it's a legacy on your wrist, built to stand the test of time.
+                Our watches are not merely accessories; they are an experience, meticulously designed for those who
+                demand the best.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </div>
+    </div>
+    <div class="sixcontainer">
+        <section class="news-events">
+            <h2>Latest News & Events</h2>
+
+            <div class="news-item">
+                <img src="one.jpg" alt="New Collection Launch" class="news-image">
+                <h3>New Collection Launch</h3>
+                <p>We are excited to announce the launch of our new luxury watch collection! Come visit our store for an
+                    exclusive preview on January 15th.</p>
+                <span class="event-date">Date: January 15, 2025</span>
+            </div>
+
+            <div class="news-item">
+                <img src="two.jpg" alt="Watch Repair Workshop" class="news-image">
+                <h3>Watch Repair Workshop</h3>
+                <p>Join our free workshop on watch maintenance and repair. Our experts will show you how to keep your
+                    timepieces in top shape.</p>
+                <span class="event-date">Date: February 5, 2025</span>
+            </div>
+
+            <div class="news-item">
+                <img src="three.jpg" alt="Exclusive Member Discounts" class="news-image">
+                <h3>Exclusive Member Discounts</h3>
+                <p>Members of our Watch Club will receive exclusive discounts on all products. Sign up today to enjoy
+                    special offers!</p>
+                <span class="event-date">Date: Ongoing</span>
+            </div>
+
+        </section>
+    </div>
+
+
+
+    <div class="sevencontainer">
+        <h1>Thank You !!</h1>
+        <button onclick="showPopup()">Click to Now More</button>
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <h2>Would you like to visit our website?</h2>
+                <a href="index.html">
+                    <button class="yes" onclick="redirectToWebsite()">Yes</button></a>
+                <button class="no" onclick="closePopup()">No</button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <h3>Stay Timeless</h3>
+        <p>Explore the finest collection of luxury, classic, and modern timepieces.</p>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#watch">Shop Watches</a>
+            <a href="#about">About Us</a>
+            <a href="form.html">Contact Us</a>
+            <a href="#">FAQs</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+        </div>
+
+        <div class="customer-care">
+            <p><strong>Customer Care:</strong></p>
+            <p>📞 Phone: +1-800-555-WATCH</p>
+            <p>✉️ Email: rajsingh555554@gamil.com</p>
+            <p>🕒 Hours: Mon-Fri: 9 AM - 8 PM | Sat: 10 AM - 6 PM</p>
+        </div>
+
+        <div class="social-links">
+            <p><strong>Follow Us:</strong></p>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">YouTube</a>
+        </div>
+
+        <div class="payments">
+            <p><strong>Secure Payments:</strong></p>
+            <img src="visa.jpg" alt="Visa">
+            <img src="smart.jpg" alt="MasterCard">
+            <img src="paypal.jpg" alt="PayPal">
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Your Raj Watch-shop All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</div>
+    <!-- Flickity JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

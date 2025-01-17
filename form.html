@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Shop Inquiry Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #2c3e50, #bdc3c7);
+            color: #2c3e50;
+            margin: 0;
+            padding: 0;
+        }
+.over{
+    overflow: hidden;
+}
+        .form-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+
+        .form-container h1 {
+            text-align: center;
+            color: #34495e;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+            border-color: #3498db;
+            outline: none;
+            box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .submit-btn {
+            background-color: #3498db;
+            color: #ffffff;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #2980b9;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            .form-container {
+                margin: 20px auto;
+                padding: 15px;
+            }
+
+            .form-container h1 {
+                font-size: 20px;
+            }
+
+            .form-group label {
+                font-size: 14px;
+            }
+
+            .form-group input, .form-group select, .form-group textarea {
+                font-size: 13px;
+                padding: 8px;
+            }
+
+            .submit-btn {
+                font-size: 14px;
+                padding: 8px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="over">
+    <div class="form-container">
+        <h1>Raj Watch-Shop Inquiry</h1>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="watch-type">Type of Watch</label>
+                <select id="watch-type" name="watch-type" required>
+                    <option value="" disabled selected>Select a watch type</option>
+                    <option value="analog">Analog</option>
+                    <option value="digital">Digital</option>
+                    <option value="smart">Smart</option>
+                    <option value="luxury">Luxury</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Additional Information</label>
+                <textarea id="message" name="message" placeholder="Share more details..." required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Inquiry</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
